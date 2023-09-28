@@ -12,26 +12,31 @@
 
   <main>
     <div class="display">
-      <span id="display-result">0</span>
+      <span id="display-value">0</span>
       <span class="display-error-message" id="display-error-message">Equação inválida</span>
     </div>
+
     <div class="content">
-      <button value="9" onclick="getValue(this)" type="button" class="btn btn-secondary">9</button>
-      <button value="8" onclick="getValue(this)" type="button" class="btn btn-secondary">8</button>
-      <button value="7" onclick="getValue(this)" type="button" class="btn btn-secondary">7</button>
-      <button value="%" onclick="getValue(this)" type="button" class="btn btn-primary">/</button>
-      <button value="6" onclick="getValue(this)" type="button" class="btn btn-secondary">6</button>
-      <button value="5" onclick="getValue(this)" type="button" class="btn btn-secondary">5</button>
-      <button value="4" onclick="getValue(this)" type="button" class="btn btn-secondary">4</button>
-      <button value="*" onclick="getValue(this)" type="button" class="btn btn-primary">x</button>
-      <button value="3" onclick="getValue(this)" type="button" class="btn btn-secondary">3</button>
-      <button value="2" onclick="getValue(this)" type="button" class="btn btn-secondary">2</button>
-      <button value="1" onclick="getValue(this)" type="button" class="btn btn-secondary">1</button>
-      <button value="-" onclick="getValue(this)" type="button" class="btn btn-primary">-</button>
-      <button value="0" onclick="getValue(this)" type="button" class="btn btn-secondary">0</button>
-      <button value="." onclick="getValue(this)" type="button" class="btn btn-primary">.</button>
-      <button value="=" onclick="getResult()" type="button" class="btn btn-primary">=</button>
-      <button value="+" onclick="getValue(this)" type="button" class="btn btn-primary">+</button>
+      <button id="7" onclick="getValue(this.id)" type="button" class="btn btn-secondary">7</button>
+      <button id="8" onclick="getValue(this.id)" type="button" class="btn btn-secondary">8</button>
+      <button id="9" onclick="getValue(this.id)" type="button" class="btn btn-secondary">9</button>
+      <button onclick="handleDelete()" type="button" class="btn btn-primary">Del</button>
+      <button id="4" onclick="getValue(this.id)" type="button" class="btn btn-secondary">4</button>
+      <button id="5" onclick="getValue(this.id)" type="button" class="btn btn-secondary">5</button>
+      <button id="6" onclick="getValue(this.id)" type="button" class="btn btn-secondary">6</button>
+      <button id="+" onclick="getValue(this.id)" type="button" class="btn btn-secondary">+</button>
+      <button id="1" onclick="getValue(this.id)" type="button" class="btn btn-secondary">1</button>
+      <button id="2" onclick="getValue(this.id)" type="button" class="btn btn-secondary">2</button>
+      <button id="3" onclick="getValue(this.id)" type="button" class="btn btn-secondary">3</button>
+      <button id="-" onclick="getValue(this.id)" type="button" class="btn btn-secondary">-</button>
+      <button id="." onclick="getValue(this.id)" type="button" class="btn btn-secondary">.</button>
+      <button id="0" onclick="getValue(this.id)" type="button" class="btn btn-secondary">0</button>
+      <button id="/" onclick="getValue(this.id)" type="button" class="btn btn-secondary">&divide;</button>
+      <button id="*" onclick="getValue(this.id)" type="button" class="btn btn-secondary">x</button>
+      <button onclick="handleReset()" type="button" class="btn btn-primary btn-reset">Reset</button>
+      <button onclick="getResult()" type="button" class="btn btn-success btn-submit">=</button>
+
+
     </div>
   </main>
 
