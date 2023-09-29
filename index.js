@@ -1,6 +1,11 @@
 let equation = "";
 let errorMessage = false;
 
+// Works to break the display text line 
+const display = document.getElementById('display')
+const displayCSS = window.getComputedStyle(display)
+display.style.maxWidth = displayCSS.width
+
 function getValue(value) {
   equation += value;
   document.getElementById("display-error-message").style.display = "none";
@@ -25,6 +30,8 @@ function handleReset() {
 }
 
 function getResult() {
+  if(equation.length === 0) return
+  
   try {
     const result = eval(equation) // Return a number
     equation = String(result) // Convert number to string
@@ -37,15 +44,12 @@ function getResult() {
 
 document.addEventListener('keydown', function(event) {
   const tecla = event.key;
-  // console.log(tecla)
   const calculatorRegex = /[0-9+\-*/().]/;
   
   if(calculatorRegex.test(tecla)) {
-    // console.log(tecla);
     document.getElementById(tecla).focus();
     getValue(tecla)
   } else if (tecla === "Backspace") {
     handleDelete()
   }
-  
 });

@@ -11995,29 +11995,39 @@ body {
 }
 
 main {
-  background-color: #5a5c68;
+  background-color: #3b4664;
   border-radius: 0.5rem;
   padding: 1rem;
+  margin: 1rem;
 }
 
 button {
-  text-transform: uppercase;
+  box-shadow: 4px 4px 0px 0px rgba(190, 177, 166, 0.4);
 }
-button:focus {
-  background-color: red !important;
+button:active {
+  transform: translate(2px, 2px);
+}
+
+.btn-primary {
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
 .display {
-  background-color: #c1d798;
+  background-color: #171f32;
+  color: #fff;
   display: flex;
   flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
   border-radius: 0.25rem;
-  padding: 0.3rem;
+  padding: 0.5rem 0.3rem;
   margin-bottom: 0.4rem;
   text-align: end;
 }
 .display .display-error-message {
   font-size: 0.6rem;
+  color: #dc3545;
   display: none;
 }
 
@@ -12025,7 +12035,7 @@ button:focus {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 0.2rem;
+  gap: 0.3rem;
 }
 .content .btn-reset {
   grid-column: 1/3;
@@ -12037,6 +12047,6 @@ button:focus {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 32px;
+    font-size: 30px;
   }
 }/*# sourceMappingURL=index.css.map */

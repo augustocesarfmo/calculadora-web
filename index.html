@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/index.css">
-  <title>Document</title>
+  <title>Calculator</title>
 </head>
 
 <body>
 
   <main>
-    <div class="display">
+    <div class="display" id="display">
       <span id="display-value">0</span>
       <span class="display-error-message" id="display-error-message">Equação inválida</span>
     </div>
@@ -35,16 +35,19 @@
       <button id="*" onclick="getValue(this.id)" type="button" class="btn btn-secondary">x</button>
       <button onclick="handleReset()" type="button" class="btn btn-primary btn-reset">Reset</button>
       <button onclick="getResult()" type="button" class="btn btn-success btn-submit">=</button>
-
-
     </div>
   </main>
 
   <script src="./index.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+  <script>
+    // Disable zoom in device mode
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('dblclick', function (event) {
+      event.preventDefault();
+    });
+  </script>
 </body>
 
 </html>
