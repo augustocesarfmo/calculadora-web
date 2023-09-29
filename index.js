@@ -50,6 +50,10 @@ document.addEventListener('keydown', function(event) {
     document.getElementById(tecla).focus();
     getValue(tecla)
   } else if (tecla === "Backspace") {
+    document.getElementById("<").focus();
     handleDelete()
+  } else if (tecla === "=") {
+    document.getElementById("=").focus();
+    getResult();
   }
 });
