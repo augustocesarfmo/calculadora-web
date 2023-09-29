@@ -5,7 +5,10 @@ Este projeto consiste numa calculadora web que possui funcionalidades básicas d
 ## 👀 Demo
 Para experimentar o projeto em ação, acesse a versão de demonstração [clicando aqui](https://augustocesarfmo.github.io/calculadora-web/).
 
-<img src="https://raw.githubusercontent.com/augustocesarfmo/calculadora-web/main/assets/calculator-screenshot.jpg" width="100%">
+<div style="display: flex; justify-content: center">
+<img src="https://raw.githubusercontent.com/augustocesarfmo/calculadora-web/main/assets/calculator-screenshot.jpg" width="50%">
+</div>
+
 
 ## 🚀 Tecnologias
 
