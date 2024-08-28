@@ -33,9 +33,6 @@ $ git clone https://github.com/augustocesarfmo/calculadora-web.git
 
 # Acessando o repositório
 $ cd calculadora-web
-
-# Executando o app
-$ Live Server
 ```
 
 ## 📝 Licença
